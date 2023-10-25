@@ -5,8 +5,9 @@
   <Registry>https://hub.docker.com/r/phalcode/gamevault-backend</Registry>
   <Network>bridge</Network>
   <Privileged>false</Privileged>
+  <Project>https://gamevau.lt/</Project>
+  <License>Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</License>
   <Support>https://github.com/phalcode/unraid-templates/issues</Support>
-  <Project>https://github.com/Phalcode/gamevault-backend</Project>
   <Overview>GameVault is an innovative gaming platform providing a self-hosted, source-available alternative to popular gaming platforms. It lets you and your friends enjoy DRM-free games stored on your file server in an organized way.</Overview>
   <Category>Productivity: Tools:</Category>
   <WebUI>http://[IP]:[PORT:8080]/</WebUI>

@@ -18,12 +18,13 @@
     1. Please read the documentation on https://gamevau.lt/
   </Requires>
   <Config Name="GAME Files" Target="/files" Default="" Mode="rw" Description="This is the path to your game files." Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="SERVER_ADMIN_USERNAME" Target="SERVER_ADMIN_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
+  <Config Name="SERVER_ADMIN_USERNAME" Target="SERVER_ADMIN_USERNAME" Default="" Mode="" Description="The username of the admin account you will need to register later" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="RAWG_API_KEY" Target="RAWG_API_KEY" Default="" Mode="" Description="Insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)" Type="Variable" Display="always" Required="false" Mask="true"/>
   <Config Name="PGID" Target="PGID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
   <Config Name="PUID" Target="PUID" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="Web" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8080</Config>
-  <Config Name="imgs" Target="/images" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/GameVault/imgs</Config>
-  <Config Name="database" Target="/db" Default="" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/GameVault/db</Config>
+  <Config Name="imgs" Target="/images" Default="/mnt/user/appdata/gamevault-backend/imgs" Mode="rw" Description="Where your images (boxarts, profile pictures, etc.) will land in" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="database" Target="/db" Default="/mnt/user/appdata/gamevault-backend/db" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="DB_SYSTEM" Target="DB_SYSTEM" Default="SQLITE" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">SQLITE</Config>
+  <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/gamevault-backend/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
 </Container>

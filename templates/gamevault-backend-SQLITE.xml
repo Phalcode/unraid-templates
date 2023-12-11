@@ -23,8 +23,8 @@
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="Server Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="advanced" Required="true" Mask="false"></Config>
-  <Config Name="Images DireServer Portctory" Target="/images" Default="/mnt/user/appdata/gamevault-backend/imgs" Mode="rw" Description="Where your images (boxarts, profile pictures, etc.) will land in" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
-  <Config Name="database" Target="/db" Default="/mnt/user/appdata/gamevault-backend/db" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Images Directory" Target="/images" Default="/mnt/user/appdata/gamevault-backend/imgs" Mode="rw" Description="Where your images (boxarts, profile pictures, etc.) will land in" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
+  <Config Name="Database Directory" Target="/db" Default="/mnt/user/appdata/gamevault-backend/db" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false"></Config>
   <Config Name="DB_SYSTEM" Target="DB_SYSTEM" Default="SQLITE" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">SQLITE</Config>
   <Config Name="Data Directory" Target="/data" Default="/mnt/user/appdata/gamevault-backend/data" Mode="rw" Description="" Type="Path" Display="advanced" Required="true" Mask="false"></Config>
 </Container>

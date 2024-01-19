@@ -1,6 +1,7 @@
 # Phalcode Unraid Templates
 
-Welcome to the repository housing the official Unraid Template Files, which are prominently featured in the Community App Store. These templates streamline the process of configuring and installing various applications on Unraid servers.
+Welcome to the repository housing the official Unraid Template Files for applications by Phalcode, which are prominently featured in the Community App Store.  
+These templates streamline the process of configuring and installing of our software on Unraid servers.
 
 ## Guidelines for Usage
 

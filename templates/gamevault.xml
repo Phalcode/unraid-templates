@@ -39,6 +39,7 @@
 
   <Branch>
     <Tag>sqlite</Tag>
+    <Repository>phalcode/gamevault-backend:latest</Repository>
     <TagDescription>Using SQLITE. You can run GameVault without a separate PostgreSQL Database using this branch (Not recommended)</TagDescription>
     <Requires>
       Please read the documentation on https://gamevau.lt/

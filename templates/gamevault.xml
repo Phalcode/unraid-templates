@@ -32,7 +32,7 @@
   <Config Name="PostgreSQL DB Password" Target="DB_PASSWORD" Default="" Mode="" Description="The Password of your PostgreSQL database" Type="Variable" Display="always" Required="true" Mask="true" />
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
-  <Config Name="Files Directory" Target="/files" Default="/mnt/user/appdata/gamevault/files" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
+  <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
   <Config Name="Images Directory" Target="/images" Default="/mnt/user/appdata/gamevault/images" Mode="rw" Description="Where application images (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
   <Config Name="Logs Directory" Target="/logs" Default="/mnt/user/appdata/gamevault/logs" Mode="rw" Description="Where application logs will be saved" Type="Path" Display="advanced" Required="false" Mask="false" />
 
@@ -47,7 +47,7 @@
     <Config Name="RAWG API Key" Target="RAWG_API_KEY" Default="" Mode="" Description="Insert your RAWG API Key here if you have one (http://rawg.io/login?forward=developer)" Type="Variable" Display="always" Required="false" Mask="false" />
     <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
     <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
-    <Config Name="Files Directory" Target="/files" Default="/mnt/user/appdata/gamevault/files" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
+    <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
     <Config Name="Images Directory" Target="/images" Default="/mnt/user/appdata/gamevault/images" Mode="rw" Description="Where application images (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
     <Config Name="Logs Directory" Target="/logs" Default="/mnt/user/appdata/gamevault/logs" Mode="rw" Description="Where application logs will be saved" Type="Path" Display="advanced" Required="false" Mask="false" />
     <Config Name="SQLITE Database Directory" Target="/db" Default="/mnt/user/appdata/gamevault/database" Mode="rw" Description="Where the SQLITE database will be saved." Type="Path" Display="advanced" Required="false" Mask="false" />

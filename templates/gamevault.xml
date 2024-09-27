@@ -25,16 +25,16 @@
     By Default you will need a separately hosted PostgreSQL Database with Version 15 or higher. This is not needed when choosing Tag "sqlite" when installing this app.
   </Requires>
   <Config Name="Server Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="advanced" Required="true" Mask="false" />
-  <Config Name="IGDB Client ID" Target="METADATA_IGDB_CLIENT_ID" Default="" Mode="" Description="This is your Client ID for metadata (https://api-docs.igdb.com/#getting-started)" Type="Variable" Display="always" Required="false" Mask="true" />
-  <Config Name="IGDB Client Secret" Target="METADATA_IGDB_CLIENT_SECRET" Default="" Mode="" Description="This is your Client secret for metadata (https://api-docs.igdb.com/#getting-started)" Type="Variable" Display="always" Required="false" Mask="true" />
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
+  <Config Name="IGDB Client-ID" Target="METADATA_IGDB_CLIENT_ID" Default="" Mode="" Description="This is your IGDB Client-ID for retrieving metadata (https://gamevau.lt/docs/server-docs/metadata-enrichment/provider-igdb#setup)" Type="Variable" Display="always" Required="false" Mask="true" />
+  <Config Name="IGDB Client-Secret" Target="METADATA_IGDB_CLIENT_SECRET" Default="" Mode="" Description="This is your IGDB Client-Secret for retrieving metadata (https://gamevau.lt/docs/server-docs/metadata-enrichment/provider-igdb#setup)" Type="Variable" Display="always" Required="false" Mask="true" />
   <Config Name="PostgreSQL DB Host" Target="DB_HOST" Default="" Mode="" Description="The Host of your PostgreSQL database" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="PostgreSQL DB Port" Target="DB_PORT" Default="5432" Mode="" Description="The Port of your PostgreSQL database" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="PostgreSQL DB User" Target="DB_USERNAME" Default="gamevault" Mode="" Description="The User of your PostgreSQL database" Type="Variable" Display="always" Required="true" Mask="false" />
   <Config Name="PostgreSQL DB Password" Target="DB_PASSWORD" Default="" Mode="" Description="The Password of your PostgreSQL database" Type="Variable" Display="always" Required="true" Mask="true" />
-  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
-  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
   <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
-  <Config Name="Images Directory" Target="/media" Default="/mnt/user/appdata/gamevault/images" Mode="rw" Description="Where application images (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
+  <Config Name="Media Directory" Target="/media" Default="/mnt/user/appdata/gamevault/media" Mode="rw" Description="Where application media (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
   <Config Name="Logs Directory" Target="/logs" Default="/mnt/user/appdata/gamevault/logs" Mode="rw" Description="Where application logs will be saved" Type="Path" Display="advanced" Required="false" Mask="false" />
 
   <Branch>
@@ -45,14 +45,14 @@
       Please read the documentation on https://gamevau.lt/
     </Requires>
     <Config Name="Server Port" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="advanced" Required="true" Mask="false" />
-    <Config Name="IGDB Client ID" Target="METADATA_IGDB_CLIENT_ID" Default="" Mode="" Description="This is your Client ID for metadata (https://api-docs.igdb.com/#getting-started)" Type="Variable" Display="always" Required="false" Mask="true" />
-    <Config Name="IGDB Client Secret" Target="METADATA_IGDB_CLIENT_SECRET" Default="" Mode="" Description="This is your Client secret for metadata (https://api-docs.igdb.com/#getting-started)" Type="Variable" Display="always" Required="false" Mask="true" />
     <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
     <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false" />
-    <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
-    <Config Name="Images Directory" Target="/media" Default="/mnt/user/appdata/gamevault/images" Mode="rw" Description="Where application images (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
-    <Config Name="Logs Directory" Target="/logs" Default="/mnt/user/appdata/gamevault/logs" Mode="rw" Description="Where application logs will be saved" Type="Path" Display="advanced" Required="false" Mask="false" />
-    <Config Name="SQLITE Database Directory" Target="/db" Default="/mnt/user/appdata/gamevault/database" Mode="rw" Description="Where the SQLITE database will be saved." Type="Path" Display="advanced" Required="false" Mask="false" />
+    <Config Name="IGDB Client-ID" Target="METADATA_IGDB_CLIENT_ID" Default="" Mode="" Description="This is your IGDB Client-ID for retrieving metadata (https://gamevau.lt/docs/server-docs/metadata-enrichment/provider-igdb#setup)" Type="Variable" Display="always" Required="false" Mask="true" />
+    <Config Name="IGDB Client-Secret" Target="METADATA_IGDB_CLIENT_SECRET" Default="" Mode="" Description="This is your IGDB Client-Secret for retrieving metadata (https://gamevau.lt/docs/server-docs/metadata-enrichment/provider-igdb#setup)" Type="Variable" Display="always" Required="false" Mask="true" />
     <Config Name="Database System" Target="DB_SYSTEM" Default="SQLITE" Mode="" Description="The database system to use." Type="Variable" Display="advanced-hide" Required="false" Mask="false">SQLITE</Config>
+    <Config Name="SQLITE Database Directory" Target="/db" Default="/mnt/user/appdata/gamevault/database" Mode="rw" Description="Where the SQLITE database will be saved." Type="Path" Display="advanced" Required="false" Mask="false" />
+    <Config Name="Files Directory" Target="/files" Default="" Mode="rw" Description="Where your game files are" Type="Path" Display="always" Required="true" Mask="false" />
+    <Config Name="Media Directory" Target="/media" Default="/mnt/user/appdata/gamevault/media" Mode="rw" Description="Where application media (boxarts, profile pictures, etc.) will be saved" Type="Path" Display="advanced" Required="true" Mask="false" />
+    <Config Name="Logs Directory" Target="/logs" Default="/mnt/user/appdata/gamevault/logs" Mode="rw" Description="Where application logs will be saved" Type="Path" Display="advanced" Required="false" Mask="false" />
   </Branch>
 </Container>
